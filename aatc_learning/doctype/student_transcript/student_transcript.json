@@ -1,0 +1,145 @@
+{
+    "creation": "2026-10-21 19:00:00.000000",
+    "modified": "2026-10-21 19:00:00.000000",
+    "name": "Student Transcript",
+    "owner": "Administrator",
+    "docstatus": 0,
+    "doctype": "DocType",
+    "module": "AATC Learning",
+    "custom": 0,
+    "is_virtual": 1,
+    "istable": 0,
+    "track_changes": 0,
+    "track_views": 0,
+    "naming_rule": "Set by user",
+    "fields": [
+        {
+            "fieldname": "student",
+            "label": "Student",
+            "fieldtype": "Link",
+            "options": "User",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "student_name",
+            "label": "Student Name",
+            "fieldtype": "Data",
+            "in_list_view": 1,
+            "read_only": 1
+        },
+        {
+            "fieldname": "course",
+            "label": "Course",
+            "fieldtype": "Link",
+            "options": "LMS Course",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "course_title",
+            "label": "Course Title",
+            "fieldtype": "Data",
+            "in_list_view": 1,
+            "read_only": 1
+        },
+        {
+            "fieldname": "enrollment",
+            "label": "Enrollment",
+            "fieldtype": "Link",
+            "options": "LMS Enrollment",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "final_grade",
+            "label": "Final Grade",
+            "fieldtype": "Select",
+            "options": "A\nB\nC\nD\nF\nPass\nFail",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "grade_points",
+            "label": "Grade Points",
+            "fieldtype": "Float",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "exam_score",
+            "label": "Exam Score",
+            "fieldtype": "Float",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "attendance_score",
+            "label": "Attendance Score",
+            "fieldtype": "Float",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "examiner_decision",
+            "label": "Examiner Decision",
+            "fieldtype": "Select",
+            "options": "PASS\nFAIL\nPENDING",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "certificate_issued",
+            "label": "Certificate Issued",
+            "fieldtype": "Check",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "certificate_number",
+            "label": "Certificate Number",
+            "fieldtype": "Data",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "certificate_expiry",
+            "label": "Certificate Expiry",
+            "fieldtype": "Date",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "exam_session",
+            "label": "Examination Session",
+            "fieldtype": "Link",
+            "options": "Examination Session",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "completion_date",
+            "label": "Completion Date",
+            "fieldtype": "Date",
+            "in_list_view": 1
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        },
+        {
+            "role": "Examination Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1
+        },
+        {
+            "role": "Quality Manager",
+            "read": 1,
+            "write": 1
+        },
+        {
+            "role": "Training Coordinator",
+            "read": 1,
+            "write": 1
+        },
+        {
+            "role": "Learner",
+            "read": 1
+        }
+    ]
+}
