@@ -27,7 +27,6 @@ def create_custom_fields_for_lms():
                 "label": "Course Code",
                 "fieldtype": "Data",
                 "unique": 1,
-                "reqd": 1,
                 "insert_after": "title",
             },
             {
